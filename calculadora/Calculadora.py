@@ -20,12 +20,13 @@ def calcular_valor(num1, num2, operacao):
     except ValueError as e:
         raise e
 
-num1 = input("Digite o primeiro número: ")
-num2 = input("Digite o segundo número: ")
-operacao = input("Digite a operação (+, -, *, /, ^): ")
+if __name__ == '__main__':
+    num1 = input("Digite o primeiro número: ")
+    num2 = input("Digite o segundo número: ")
+    operacao = input("Digite a operação (+, -, *, /, ^): ")
 
-try:
-    resultado = calcular_valor(num1, num2, operacao)
-    print(f"Resultado: {resultado}")
-except Exception as e:
-    print(f"Erro: {e}")
+    try:
+        resultado = calcular_valor(num1, num2, operacao)
+        print(f"Resultado: {resultado}")
+    except Exception as e:
+        print(f"Erro: {e}")
